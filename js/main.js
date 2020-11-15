@@ -65,8 +65,3 @@ L.control.layers(baseLayers, overlays,{
 }).addTo(map);
 
 L.control.scale().addTo(map);
-
-var popup = L.popup()
-    .setLatLng(latlng)
-    .setContent('<p>Hello world!<br />This is a nice popup.</p>')
-    .openOn(map);
