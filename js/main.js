@@ -46,6 +46,10 @@ var streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoom
 
 var map = L.map('map', {
   center: [12.398243, -19.364222],
+  measureControl:true,
+  zoomSnap: 0.25,
+  zoomControl:true, maxZoom:45, minZoom:1,
+  zoomDelta: 2,
   zoom: 2,
   layers: [WorkPlaces, grayscale]
 });
