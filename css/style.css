@@ -68,13 +68,6 @@ a:hover {
   background: rgb(234, 239, 240);
 }
 
-.title{
-  text-align: center;
-  background-color: rgb(202, 211, 212);
-  border-radius: 0 15px 0 0;
-  margin: 0;
-}
-
 .Images{
   border: 1px solid red;
   border-radius: 5px;
@@ -85,4 +78,9 @@ a:hover {
 .leaflet-control-attribution{
   border:0.5px solid red;
   border-radius: 3px;
+}
+
+.Title{
+  border: 1px solid red;
+  background-color: blueviolet;
 }
