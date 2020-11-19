@@ -93,7 +93,7 @@ var streetss  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoo
     grayscalee   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
     topography = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {attribution: mbAttr});
 
-var map = L.map('mapy', {
+var mapy = L.map('mapy', {
   center: [34.5553, 67.8075],
   measureControl:true,
   zoomSnap: 0.25,
@@ -115,26 +115,53 @@ var overlays = {
 
 L.control.layers(baseLayers, overlays,{
   collapsed:false,
-}).addTo(map);
+}).addTo(mapy);
 
-
-
+L.control.scale().addTo(map);
+L.control.scale().addTo(mapy);
 
 // Start adding title for the map.
-/*L.Control.textbox = L.Control.extend({
-  onAdd: function(mapy) {
+L.Control.textbox = L.Control.extend({
+  onAdd: function(map) {
     
   var text = L.DomUtil.create('div');
   text.id = "info_text";
-  text.innerHTML = "<div class='Title'> <h2>Places I Have Worked </h2></div>"
+  text.innerHTML = "<div class='Title'> <h4>Places I Have Worked </h4></div>"
   return text;
   },
 
-  onRemove: function(mapy) {
+  onRemove: function(map) {
     // Nothing to do here
   }
 });
 L.control.textbox = function(opts) { return new L.Control.textbox(opts);}
+L.control.textbox({ position: 'topleft' }).addTo(map);
+
+L.Control.textbox = L.Control.extend({
+  onAdd: function(map) {
+    
+  var text = L.DomUtil.create('div');
+  text.id = "info_text";
+  text.innerHTML = "<div class='Title'> <h4>Places I Have Worked </h4></div>"
+  return text;
+  },
+
+  onRemove: function(map) {
+    // Nothing to do here
+  }
+});
+
+L.control.textbox = function(opts) { return new L.Control.textbox(opts);}
 L.control.textbox({ position: 'topleft' }).addTo(mapy);
 
-L.control.scale().addTo(mapy);*/
+
+
+var popup = L.popup();
+function onMapClick(e) {
+    popup
+    .setLatLng(e.latlng)
+    .setContent("<h5>Hello!</h5><p class ='coordinates'>The coordinates of the clicked point is:" + e.latlng+"</p>")
+    .openOn(map);
+};
+map.on('click', onMapClick);
+
