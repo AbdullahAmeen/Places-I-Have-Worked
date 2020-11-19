@@ -17,8 +17,8 @@ a:hover {
 }
 
 img:hover{
-  background: rgb(120, 207, 241);
-  border-radius:25%;
+  background: rgb(246, 214, 31);
+  border-radius:10%;
 }
  .leaflet-popup-content{
     background: black;
@@ -119,14 +119,11 @@ ul{
   font-size: 14px;;
 }
 
-.portfolio{
 
-}
 
 .globe{
-  height: 57px;
-  width: 55px;
-  margin-top:-10px;
+  height: 50px;
+  width: 48px;
 }
 .globe:hover{
   background-color:rgb(243, 243, 86);

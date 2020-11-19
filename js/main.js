@@ -155,13 +155,23 @@ L.control.textbox = function(opts) { return new L.Control.textbox(opts);}
 L.control.textbox({ position: 'topleft' }).addTo(mapy);
 
 
+// Adding Popup to Show the Coordinates of a Clicked Point
 
 var popup = L.popup();
 function onMapClick(e) {
     popup
     .setLatLng(e.latlng)
-    .setContent("<h5>Hello!</h5><p class ='coordinates'>The coordinates of the clicked point is:" + e.latlng+"</p>")
+    .setContent("<h5>Hello!</h5><p class ='coordinates'>The coordinates of the clicked point are:" + e.latlng+"</p>")
     .openOn(map);
 };
 map.on('click', onMapClick);
 
+
+var popup = L.popup();
+function onMapClick(e) {
+    popup
+    .setLatLng(e.latlng)
+    .setContent("<h5>Hello!</h5><p class ='coordinates'>The coordinates of the clicked point are:" + e.latlng+"</p>")
+    .openOn(mapy);
+};
+mapy.on('click', onMapClick);
