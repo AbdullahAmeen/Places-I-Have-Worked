@@ -131,6 +131,7 @@ ul{
 .globe{
   height: 50px;
   width: 48px;
+  margin-bottom: 20px;
 }
 .globe:hover{
   background-color:rgb(243, 243, 86);
