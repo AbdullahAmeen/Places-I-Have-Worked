@@ -17,7 +17,7 @@ a:hover {
 }
 
 img:hover{
-  background: rgb(246, 214, 31);
+  background: rgb(165, 211, 208);
   border-radius:10%;
 }
  .leaflet-popup-content{
@@ -67,7 +67,10 @@ img:hover{
 
 
 .first{
-  border:1px solid red;
+  border-left:1px solid red;
+  border-right:0.5px solid red;
+  border-top:1px solid red;
+  border-bottom:1px solid red;
   padding: 0;
   margin-top: 20px;
   border-radius: 0 0 0 0;
@@ -77,13 +80,17 @@ img:hover{
   border-right:1px solid red;
   border-top:1px solid red;
   border-bottom:1px solid red;
+  border-left:0.5px solid red;
   padding: 0;
   margin-top: 20px;
   border-radius: 0 15px 15px 0;
 }
 
 .col-lg-2{
-  border:1px solid red;
+  border-right:0.5px solid red;
+  border-left:1px solid red;
+  border-bottom:1px solid red;
+  border-top:1px solid red;
   padding: 0;
   margin-top: 20px;
   border-radius: 15px 0 0 15px;

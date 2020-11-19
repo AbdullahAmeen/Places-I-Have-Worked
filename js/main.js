@@ -3,14 +3,14 @@
 var WorkPlaces = L.layerGroup();
 
 var myIcon = L.icon({
-    iconUrl: 'img/my-icon.png',
-    iconSize: [42, 52],
+    iconUrl: 'img/my-icon2.png',
+    iconSize: [47, 52],
     iconAnchor: [15, 25],
     popupAnchor: [-3, -36]
 });
 var myIcon2 = L.icon({
-    iconUrl: 'img/my-icon1.png',
-    iconSize: [42, 52],
+    iconUrl: 'img/my-icon3.png',
+    iconSize: [47, 52],
     iconAnchor: [15, 25],
     popupAnchor: [-3, -36],
 });
@@ -64,7 +64,7 @@ L.control.layers(baseLayers, overlays,{
 var WorkPlace = L.layerGroup();
 
 var myIcon2 = L.icon({
-    iconUrl: 'img/my-icon1.png',
+    iconUrl: 'img/my-icon3.png',
     iconSize: [42, 52],
     iconAnchor: [15, 25],
     popupAnchor: [-3, -36],
