@@ -15,11 +15,19 @@ var myIcon2 = L.icon({
     popupAnchor: [-3, -36],
 });
 
-L.marker([43.09757513681959,-89.3542957305908],{icon:myIcon2}).bindPopup("<h6 class='h1'>Forward Service Corporation-Upward Bound Program</h6> <a href='https://fsc-corp.org/programs/upward-bound/' target=_blank><h6>Click here for more details</h6></a>").addTo(WorkPlaces),
-L.marker([43.10984994346575,-89.3089342117309],{icon:myIcon2}).bindPopup("<h6 class='h1'>Porchlight Inc.</h6> <a href='https://porchlightinc.org/' target=_blank><h6>Click here for more details.</h6></a>"
-).addTo(WorkPlaces),
-L.marker([43.070596384405306,-89.3952476978302],{icon:myIcon2}).bindPopup("<h6 class= 'h1'>Madison Metropolitan School District (MMSD) </h6> <a href='https://www.madison.k12.wi.us/' target=_blank><h6>Click here for more details.</h6></a>").addTo(WorkPlaces),
-L.marker([43.07241858824732,-89.52495664358139],{icon:myIcon2}).bindPopup("<h6 class='h1'>TDS Telecom. <a href='https://tdstelecom.com/'target=_blank><h6>Click here for more details.</h6></a> <img src='img/tds.png' alt='TDS Building' width='150' height='110' class='Images'></h6>").addTo(WorkPlaces);
+L.marker([43.09757513681959,-89.3542957305908],{icon:myIcon2}).bindPopup("<h6 class='h1'><b>Math/Science Instructor-Upward Bound Program</b> </h6> <h6 class='h7'> <b>Forward Service Corporation - May 2018 - Sep-2019</b></h6> <ul class='details'> <li>Developed Upward Bound academic year curriculum for high school students</li><li>Guided students on 5-week summer program to one of Wisconsin's universities</li><li>Conducted ACT prep training in math and science sections</li><li>Tutored 60 students in math/science on regular basis</li></ul>",{
+  maxWidth : 460
+}).addTo(WorkPlaces),
+L.marker([43.10984994346575,-89.3089342117309],{icon:myIcon2}).bindPopup("<h6 class='h1'><b>Case Manager</b> </h6> <h6 class='h7'> <b>Porchlight Inc. - Aug-2016 - Mar-2018</b></h6> <ul class='details'> <li>Helped clients obtain stable housing and employment</li><li>Referred clients to available community resources</li><li>Provided daily advocacy and case management to up to 15 clients</li><li>Assisted clients in maintaining stable housing and employment</li></ul>",{
+  maxWidth : 460
+}).addTo(WorkPlaces),
+L.marker([43.070596384405306,-89.3952476978302],{icon:myIcon2}).bindPopup("<h6 class='h1'><b>Substitute Teacher</b> </h6> <h6 class='h7'> <b>Madison Metropolitan School District - Sep-2015 - Feb-2018</b></h6> <ul class='details'> <li>Provided classroom support to teachers and students</li><li>Facilitated tutorial sessions for students in math and science</li><li>Taught and managed a class of 25- 30 students</li><li>Tutored students in math/science on regular basis</li></ul>",{
+  maxWidth : 460
+}).addTo(WorkPlaces),
+L.marker([43.07241858824732,-89.52495664358139],{icon:myIcon2}).bindPopup("<h6 class='h1'><b>GIS Intern</b> </h6> <h6 class='h7'> <b>Telephone and Data Systems (TDS) - Oct 2019 - Present</b></h6> <ul class='details'> <li>Add easements and the Right of Way permits to databases</li><li>Upload/draw subdivision plats and certify survey maps into geodatabases</li><li>Created a web map to visualize and track the Right of Way (ROW) workflow</li><li>Searched and downloaded over 3000 subdivision plats and certify survey maps</li><li>Digitiz public utility easement on plats and CSM in ArcGIS and in ArcGIS online</li></ul>",{
+  maxWidth : 460
+}).addTo(WorkPlaces);
+
 
 var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
     '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -94,12 +102,12 @@ var streetss  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoo
     topography = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {attribution: mbAttr});
 
 var mapy = L.map('mapy', {
-  center: [34.5553, 67.8075],
+  center: [33.5553, 66.9875],
   measureControl:true,
   zoomSnap: 0.25,
   zoomControl:true, maxZoom:45, minZoom:1,
   zoomDelta: 2,
-  zoom: 5.5,
+  zoom: 6,
   layers: [WorkPlace, grayscalee]
 });
 
