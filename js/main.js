@@ -59,7 +59,7 @@ var overlays = {
 };
 
 L.control.layers(baseLayers, overlays,{
-  collapsed:false,
+  collapsed:true,
 }).addTo(map);
 
 
@@ -150,7 +150,7 @@ var overlays = {
 };
 
 L.control.layers(baseLayers, overlays,{
-  collapsed:false,
+  collapsed:true,
 }).addTo(mapy);
 
 L.control.scale().addTo(map);
@@ -194,21 +194,21 @@ L.control.textbox({ position: 'topleft' }).addTo(mapy);
 // Adding Popup to Show the Coordinates of a Clicked Point
 
 var popupOne = L.popup();
-function onMapClick(e) {
+function onMapOneClick(e) {
     popupOne
     .setLatLng(e.latlng)
     .setContent("Latitude:  " + e.latlng.lat + '<br>' + "Longitude:  " + e.latlng.lng)
     .openOn(map);
 };
-map.on('click', onMapClick);
+map.on('click', onMapOneClick);
 
 
 
 var popupTwo = L.popup();
-function onMapClick(e) {
+function onMapTwoClick(e) {
     popupTwo
     .setLatLng(e.latlng)
     .setContent("Latitude:  " + e.latlng.lat + '<br>' + "Longitude:  " + e.latlng.lng)
     .openOn(mapy);
 };
-mapy.on('click', onMapClick);
+mapy.on('click', onMapTwoClick);
