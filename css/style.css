@@ -195,7 +195,7 @@ h4{
 }
 
 .leaflet-control-layers-toggle {
-	background-image: url("/img/layers-3x.png");
+	background-image: url("../img/layers-3x.png");
 	width: 60px;
 	height:60px;
 	}
