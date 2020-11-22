@@ -39,10 +39,11 @@ img:hover{
 
 .leaflet-control-layers-expanded{
   font-size: 16px;
-  background-color: rgb(213, 230, 230);
+  background-color: rgb(3, 49, 49);
   border: 1px solid red;
   color:rgb(5, 0, 0);
-  opacity: 70%;
+  opacity: 80%;
+  color: white;
 }
 
 .photo{
@@ -177,7 +178,7 @@ h4{
 
 .LINKS{
   font-size: 14px;
-  color: rgb(99, 169, 230);
+  color: rgb(186, 213, 236);
 }
 
 .basedkabul{
@@ -192,3 +193,9 @@ h4{
   color: rgb(234, 238, 20);
   font-weight: bold;
 }
+
+.leaflet-control-layers-toggle {
+	background-image: url("/img/layers-3x.png");
+	width: 60px;
+	height:60px;
+	}
