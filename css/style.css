@@ -39,7 +39,7 @@ img:hover{
 
 .leaflet-control-layers-expanded{
   font-size: 16px;
-  background-color: rgb(3, 49, 49);
+  background-color: rgb(2, 54, 47);
   border: 1px solid red;
   color:rgb(5, 0, 0);
   opacity: 80%;
@@ -114,13 +114,13 @@ ul{
 
 
 .globe{
-  height: 55px;
-  width: 52px;
+  height: 58px;
+  width: 130px;
   margin-bottom: 10px;
 }
 .globe:hover{
-  background-color:rgb(243, 243, 86);
-  border-radius: 60%
+  background-color:rgb(145, 200, 216);
+  border-radius: 10px;
 }
 
 .coordinates{
