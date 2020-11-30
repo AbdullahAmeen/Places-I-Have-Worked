@@ -208,18 +208,19 @@ h4{
     background-color: rgb(245, 238, 238);
     opacity: 65%;
     border-radius: 20px;
+    margin-left: -2px;
   }
 
   #rotatingbutton{
-    width: 66px;
-    height:66px;
+    width: 70px;
+    height:70px;
     background-image: url("../img/World-Continents1.png");
     border: 0.05px solid rgb(221, 188, 182);
     border-radius: 50%;
     overflow: visible;
-    background-size: 115px;
+    background-size: 125px;
     animation-name: rotate;
-    animation-duration: 128s;
+    animation-duration: 170s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     position: relative;
