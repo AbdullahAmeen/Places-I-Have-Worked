@@ -201,13 +201,32 @@ h4{
   
   .resumeportfoilo{
     font-size: 12.5px;
-    margin-left: -70px;
+    margin-left: -2px;
     color: rgb(212, 14, 8);
     font-weight: bold;
     text-transform: uppercase;
-    background-color: rgb(238, 225, 225);
-    opacity: 60%;
-    border-radius: 25px;
+    background-color: rgb(245, 238, 238);
+    opacity: 65%;
+    border-radius: 20px;
   }
 
+  #rotatingbutton{
+    width: 66px;
+    height:66px;
+    background-image: url("../img/World-Continents1.png");
+    border: 0.05px solid rgb(221, 188, 182);
+    border-radius: 50%;
+    overflow: visible;
+    background-size: 115px;
+    animation-name: rotate;
+    animation-duration: 128s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    margin: auto;
+  }
+  @keyframes rotate {
+    from { background-position-x: 0px; }
+    to { background-position-x: 3900px; }
+    }
   
