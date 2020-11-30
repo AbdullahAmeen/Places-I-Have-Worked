@@ -42,13 +42,13 @@ img:hover{
   background-color: rgb(2, 54, 47);
   border: 1px solid red;
   color:rgb(5, 0, 0);
-  opacity: 80%;
+  opacity: 70%;
   color: white;
 }
 
 .photo{
-  height: 150px;;
-  width: 150px;
+  height: 145px;;
+  width: 143px;
   border-radius:50%;
   box-shadow: 0 1px 1px 1px rgb(233, 31, 5);
   margin-top: 50px;
@@ -225,7 +225,7 @@ h4{
     animation-timing-function: linear;
     position: relative;
     margin: auto;
-    padding-top: 22px;
+    padding-top: 21px;
   }
   @keyframes rotate {
     from { background-position-x: 0px; }
