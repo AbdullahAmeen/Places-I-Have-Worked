@@ -208,7 +208,7 @@ h4{
     background-color: rgb(245, 238, 238);
     opacity: 65%;
     border-radius: 20px;
-    margin-left: -2px;
+
   }
 
   #rotatingbutton{
@@ -225,6 +225,7 @@ h4{
     animation-timing-function: linear;
     position: relative;
     margin: auto;
+    padding-top: 22px;
   }
   @keyframes rotate {
     from { background-position-x: 0px; }
