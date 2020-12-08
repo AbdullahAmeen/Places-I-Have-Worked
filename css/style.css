@@ -212,7 +212,7 @@ h4{
   }
 
   #rotatingbutton{
-    width: 70px;
+    width: 71px;
     height:70px;
     background-image: url("../img/World-Continents1.png");
     border: 0.05px solid rgb(221, 188, 182);
@@ -220,7 +220,7 @@ h4{
     overflow: visible;
     background-size: 125px;
     animation-name: rotate;
-    animation-duration: 170s;
+    animation-duration: 310s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     position: relative;
